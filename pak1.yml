@@ -1,0 +1,137 @@
+---
+pak1:
+  gfx:
+    pop.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/pop.lmp
+  maps:
+    dm1.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/dm1.bsp
+    dm2.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/dm2.bsp
+    dm3.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/dm3.bsp
+    dm4.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/dm4.bsp
+    dm5.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/dm5.bsp
+    dm6.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/dm6.bsp
+    e2m1.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e2m1.bsp
+    e2m2.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e2m2.bsp
+    e2m3.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e2m3.bsp
+    e2m4.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e2m4.bsp
+    e2m5.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e2m5.bsp
+    e2m6.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e2m6.bsp
+    e2m7.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e2m7.bsp
+    e3m1.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e3m1.bsp
+    e3m2.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e3m2.bsp
+    e3m3.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e3m3.bsp
+    e3m4.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e3m4.bsp
+    e3m5.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e3m5.bsp
+    e3m6.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e3m6.bsp
+    e3m7.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e3m7.bsp
+    e4m1.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e4m1.bsp
+    e4m2.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e4m2.bsp
+    e4m3.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e4m3.bsp
+    e4m4.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e4m4.bsp
+    e4m5.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e4m5.bsp
+    e4m6.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e4m6.bsp
+    e4m7.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e4m7.bsp
+    e4m8.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e4m8.bsp
+    end.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/end.bsp
+  progs:
+    b_g_key.mdl:
+      LibreQuake.zip: LibreQuake-master/lq1/progs/b_g_key.mdl
+    b_s_key.mdl:
+      LibreQuake.zip: LibreQuake-master/lq1/progs/b_s_key.mdl
+    end2.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/end2.mdl
+    end3.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/end3.mdl
+    end4.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/end4.mdl
+    enforcer.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/enforcer.mdl
+    fish.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/fish.mdl
+    laser.mdl:
+      LibreQuake.zip: LibreQuake-master/lq1/progs/laser.mdl
+    oldone.mdl:
+      LibreQuake.zip: LibreQuake-master/lq1/progs/oldone.mdl
+    shalrath.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/shalrath.mdl
+    tarbaby.mdl:
+      LibreQuake.zip: LibreQuake-master/lq1/progs/tarbaby.mdl
+    teleport.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/teleport.mdl
+    v_spike.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/v_spike.mdl
+  sound:
+    misc/basekey.wav:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/misc/basekey.wav
+    blob/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/blob/
+    boss2/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/boss2/
+    enforcer/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/enforcer/
+    fish/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/fish/
+    hknight/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/hknight/
+    shalrath/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/shalrath/
+

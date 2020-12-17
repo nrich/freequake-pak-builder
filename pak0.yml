@@ -1,0 +1,529 @@
+---
+pak0:
+  .:
+    gfx-lq1.wad:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx.wad
+    gfx.wad:
+      OpenQuartz.zip:
+        - id1/pak0.pak
+        - gfx.wad
+    default.cfg:
+      LibreQuake.zip: LibreQuake-master/lq1/default.cfg
+    quake.rc:
+      LibreQuake.zip: LibreQuake-master/lq1/quake.rc
+  gfx:
+    bigbox.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/bigbox.lmp
+    box_bl.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/box_bl.lmp
+    box_bm.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/box_bm.lmp
+    box_br.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/box_br.lmp
+    box_ml.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/box_ml.lmp
+    box_mm2.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/box_mm2.lmp
+    box_mm.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/box_mm.lmp
+    box_mr.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/box_mr.lmp
+    box_tl.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/box_tl.lmp
+    box_tm.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/box_tm.lmp
+    box_tr.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/box_tr.lmp
+    colormap.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/colormap.lmp
+    complete.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/complete.lmp
+    conback.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/conback.lmp
+    dim_drct.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/dim_drct.lmp
+    dim_ipx.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/dim_ipx.lmp
+    dim_modm.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/dim_modm.lmp
+    dim_mult.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/dim_mult.lmp
+    dim_tcp.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/dim_tcp.lmp
+    finale.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/finale.lmp
+    help0.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/help0.lmp
+    help1.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/help1.lmp
+    help2.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/help2.lmp
+    help3.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/help3.lmp
+    help4.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/help4.lmp
+    help5.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/help5.lmp
+    inter.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/inter.lmp
+    loading.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/loading.lmp
+    mainmenu.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/mainmenu.lmp
+    menudot1.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/menudot1.lmp
+    menudot2.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/menudot2.lmp
+    menudot3.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/menudot3.lmp
+    menudot4.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/menudot4.lmp
+    menudot5.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/menudot5.lmp
+    menudot6.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/menudot6.lmp
+    menuplyr.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/menuplyr.lmp
+    mp_menu.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/mp_menu.lmp
+    netmen1.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/netmen1.lmp
+    netmen2.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/netmen2.lmp
+    netmen3.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/netmen3.lmp
+    netmen4.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/netmen4.lmp
+    netmen5.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/netmen5.lmp
+    palette.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/palette.lmp
+    pause.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/pause.lmp
+    p_load.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/p_load.lmp
+    p_multi.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/p_multi.lmp
+    p_option.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/p_option.lmp
+    p_save.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/p_save.lmp
+    qplaque.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/qplaque.lmp
+    ranking.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/ranking.lmp
+    sell.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/sell.lmp
+    sp_menu.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/sp_menu.lmp
+    ttl_cstm.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/ttl_cstm.lmp
+    ttl_main.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/ttl_main.lmp
+    ttl_sgl.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/ttl_sgl.lmp
+    vidmodes.lmp:
+      LibreQuake.zip: LibreQuake-master/lq1/gfx/vidmodes.lmp
+  maps:
+    b_batt0.bsp:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - maps/b_batt0.bsp
+    b_batt1.bsp:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - maps/b_batt1.bsp
+    b_bh100.bsp:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - maps/b_bh100.bsp
+    b_bh10.bsp:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - maps/b_bh10.bsp
+    b_bh25.bsp:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - maps/b_bh25.bsp
+    b_explob.bsp:
+      OpenQuartz.zip:
+        - id1/pak0.pak
+        - maps/b_explob.bsp
+    b_exbox2.bsp:
+      OpenQuartz.zip:
+        - id1/pak0.pak
+        - maps/b_exbox2.bsp
+    b_nail0.bsp:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - maps/b_nail0.bsp
+    b_nail1.bsp:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - maps/b_nail1.bsp
+    b_rock0.bsp:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - maps/b_rock0.bsp
+    b_rock1.bsp:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - maps/b_rock1.bsp
+    b_shell0.bsp:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - maps/b_shell0.bsp
+    b_shell1.bsp:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - maps/b_shell1.bsp
+    e1m1.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e1m1.bsp
+    e1m2.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e1m2.bsp
+    e1m3.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e1m3.bsp
+    e1m4.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e1m4.bsp
+    e1m5.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e1m5.bsp
+    e1m6.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e1m6.bsp
+    e1m7.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e1m7.bsp
+    e1m8.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/e1m8.bsp
+    start.bsp:
+      quake_map_source.zip: quake_map_source-master/bsp/start.bsp
+  progs:
+    armor.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/armor.mdl
+    backpack.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/backpack.mdl
+    bolt2.mdl:
+      LibreQuake.zip: LibreQuake-master/lq1/progs/bolt2.mdl
+    bolt3.mdl:
+      LibreQuake.zip: LibreQuake-master/lq1/progs/bolt3.mdl
+    bolt.mdl:
+      LibreQuake.zip: LibreQuake-master/lq1/progs/bolt.mdl
+    boss.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/boss.mdl
+    demon.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/demon.mdl
+    dog.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/dog.mdl
+    end1.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/end1.mdl
+    eyes.mdl:
+      LibreQuake.zip: LibreQuake-master/lq1/progs/eyes.mdl
+    flame.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/flame.mdl
+    flame2.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/flame2.mdl
+    gib1.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/gib1.mdl
+    gib2.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/gib2.mdl
+    gib3.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/gib3.mdl
+    g_light.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/g_light.mdl
+    g_nail2.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/g_nail2.mdl
+    g_nail.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/g_nail.mdl
+    grenade.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/grenade.mdl
+    g_rock2.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/g_rock2.mdl
+    g_rock.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/g_rock.mdl
+    g_shot.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/g_shot.mdl
+    h_demon.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/h_demon.mdl
+    h_dog.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/h_dog.mdl
+    h_guard.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/h_guard.mdl
+    h_hellkn.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/h_hellkn.mdl
+    h_knight.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/h_knight.mdl
+    hknight.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/hknight.mdl
+    h_mega.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/h_mega.mdl
+    h_ogre.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/h_ogre.mdl
+    h_player.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/h_player.mdl
+    h_shal.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/h_shal.mdl
+    h_shams.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/h_shams.mdl
+    h_wizard.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/h_zombie.mdl
+    h_zombie.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/h_zombie.mdl
+    invisibl.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/invisibl.mdl
+    invulner.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/invulner.mdl
+    knight.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/knight.mdl
+    k_spike.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/k_spike.mdl
+    lavaball.mdl:
+      LibreQuake.zip: LibreQuake-master/lq1/progs/lavaball.mdl
+    missile.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/missile.mdl
+    ogre.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/ogre.mdl
+    player.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/player.mdl
+    quaddama.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/quaddama.mdl
+    s_bubble.spr:
+      LibreQuake.zip: LibreQuake-master/lq1/progs/s_bubbles.spr
+    s_explod.spr:
+      LibreQuake.zip: LibreQuake-master/lq1/progs/s_explod.spr
+    shambler.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/shambler.mdl
+    s_light.mdl:
+      OpenQuartz.zip:
+        - id1/pak1.pak
+        - progs/s_light.mdl
+    s_light.spr:
+      LibreQuake.zip: LibreQuake-master/lq1/progs/s_light.spr
+    soldier.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/soldier.mdl
+    spike.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/spike.mdl
+    s_spike.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/s_spike.mdl
+    suit.mdl:
+      LibreQuake.zip: LibreQuake-master/lq1/progs/suit.mdl
+    v_axe.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/v_axe.mdl
+    v_light.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/v_light.mdl
+    v_nail2.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/v_nail2.mdl
+    v_nail.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/v_nail.mdl
+    v_rock2.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/v_rock2.mdl
+    v_rock.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/v_rock.mdl
+    v_shot2.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/v_shot2.mdl
+    v_shot1.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/v_shot1.mdl
+    v_shot.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/v_shot.mdl
+    w_g_key.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/w_g_key.mdl
+    w_s_key.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/w_s_key.mdl
+    wizard.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/wizard.mdl
+    w_spike.mdl:
+      OpenQuartz.zip:
+        - id1/pak1.pak
+        - progs/w_spike.mdl
+    w_wizard.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/w_spike.mdl
+    zombie.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/zombie.mdl
+    zom_gib.mdl:
+      quake_authmdl.zip:
+        - quake_authmdl-master/id1/pakz.pak
+        - progs/zom_gib.mdl
+  sound:
+    ambience/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/ambience/
+    boss1/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/boss1/
+    buttons/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/buttons/
+    demon/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/demon/
+    dog/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/dog/
+    doors/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/doors/
+    hknight/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/hknight/
+    items/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/items/
+    knight/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/knight/
+    misc/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/misc/
+    ogre/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/ogre/
+    plats/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/plats/
+    player/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/player/
+    shambler/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/shambler/
+    soldier/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/soldier/
+    weapons/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/weapons/
+    wizard/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/wizard/
+    zombie/:
+      Quake_Sound_Bulb.zip:
+        - id1/PAKSB.pak
+        - sound/zombie/
