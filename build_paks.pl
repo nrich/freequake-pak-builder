@@ -9,12 +9,12 @@ use File::Copy qw/mv/;
 use File::Find qw/find/;
 use File::Slurp qw/read_file/;
 use YAML::Tiny qw/Dump Load/;
+use File::Basename qw/dirname/;
 
 my %zip_urls = qw(
     quake_authmdl.zip       https://github.com/NightFright2k19/quake_authmdl/archive/master.zip
     LibreQuake.zip          https://github.com/MissLav/LibreQuake/archive/master.zip
     quake_map_source.zip    https://github.com/fzwoch/quake_map_source/archive/master.zip
-    sbqsfq.zip              https://sjc3.dl.dbolical.com/dl/2019/01/10/Seans_Better_Quality_Sounds_For_Quake.zip
     OpenQuartz.zip          https://iweb.dl.sourceforge.net/project/openquartz/Open%20Quartz%20playable%20games/Open%20Quartz%202004.08.01/OpenQuartzWindows2004.08.01.zip
     Quake_Sound_Bulb.zip    https://sjc4.dl.dbolical.com/dl/2019/10/03/Quake_Sound_Bulb.zip
 );
@@ -133,6 +133,8 @@ sub extract_from_pak {
 
     for my $extract (@to_extract) {
         my ($ex, $out) = @$extract;
+
+        mkpath dirname $out;
 
         open my $fh, '>', $out or die "Could not write to `$out': $!\n";
         binmode $fh;
