@@ -3,13 +3,15 @@
 use strict;
 use warnings;
 
+use Getopt::Std qw/getopts/;
 use Archive::Zip qw//;
-use File::Path qw/mkpath/;
+use File::Path qw/mkpath rmtree/;
 use File::Copy qw/mv/;
 use File::Find qw/find/;
 use File::Slurp qw/read_file/;
 use YAML::Tiny qw/Dump Load/;
 use File::Basename qw/dirname/;
+use Image::ExifTool qw/:Public/;
 
 my %zip_urls = qw(
     quake_authmdl.zip       https://github.com/NightFright2k19/quake_authmdl/archive/master.zip
@@ -19,6 +21,9 @@ my %zip_urls = qw(
     Quake_Sound_Bulb.zip    https://sjc4.dl.dbolical.com/dl/2019/10/03/Quake_Sound_Bulb.zip
 );
 
+my %opts = ();
+
+getopts('rc', \%opts);
 main(@ARGV);
 
 sub main {
@@ -91,7 +96,9 @@ sub main {
     }
 
     for my $pak (@paks) {
+        resample_sound($pak) if $opts{r};
         create_pak("$pak.pak", $pak);
+        rmtree $pak if $opts{c};
     }
 }
 
@@ -184,3 +191,89 @@ sub create_pak {
 
     close $fh;
 }
+
+sub resample_sound {
+    my ($path) = @_;
+
+    find({
+        no_chdir => 1,
+        wanted => sub {
+            my $file = $File::Find::name;
+
+            if (-f $file && $file =~ /\.wav$/) {
+                my $info = ImageInfo($file);
+
+
+                if ($info->{BitsPerSample} == 8) {
+                    return;
+                }
+
+                if ($info->{CuePoints}) {
+                    my $scale = $info->{AvgBytesPerSec}/11025;
+
+                    system qw/sox/, $file, qw/-q -r/, $info->{SampleRate}, '-c', $info->{NumChannels}, '-b', $info->{BitsPerSample}, "$file.wav";
+
+                    my $data = read_file $file;
+                    my $size =  -s "$file.wav";
+                    my $len = length $data;
+
+                    my $tagdata = substr $data, $size;
+                    my ($chunk, $tagsize) = unpack 'A4l<', $tagdata;
+
+                    my $cuepoints = get_cuepoints($tagdata, $scale);
+
+                    system qw/sox/, $file, qw/-q -r 11025 -c 1 -b 8/, "$file.wav";
+
+                    open my $fh, '>>', "$file.wav" or die "Could not open `$file.wav': $!\n";
+                    binmode $fh;
+                    print $fh $cuepoints;
+                    close $fh;
+                } else {
+                    system qw/sox/, $file, qw/-q -r 11025 -c 1 -b 8/, "$file.wav";
+                }
+
+                mv "$file.wav", $file unless $?;
+                unlink "$file.wav";
+            }
+        }},
+        $path
+    );
+}
+
+sub get_cuepoints {
+    my ($data, $scale) = @_;
+
+    my @cuepoints = ();
+
+    my $cuedata = '';
+
+    while ($data) {
+        my ($chunk, $tagsize) = unpack 'a4V', $data;
+        my $tagdata = substr($data, 4+4, $tagsize);
+
+        if ($chunk eq 'cue ') {
+            my $num_cuepoints = unpack 'V', $tagdata;
+
+            $cuedata = pack 'a4VV', $chunk, $tagsize, $num_cuepoints;
+
+            my @cues = unpack "\@4(VVa4VVV)$num_cuepoints", $tagdata;
+
+            while (@cues) {
+                my ($id, $pos, $chunkid, $start, $block, $offset);
+
+                ($id, $pos, $chunkid, $start, $block, $offset, @cues) = @cues;
+                $pos = int($pos/$scale);
+                $offset = int($offset/$scale);
+
+                push @cuepoints, [$id, $pos, $chunkid, $start, $block, $offset];
+
+                $cuedata .= pack 'VVa4VVV', $id, $pos, $chunkid, $start, $block, $offset;
+            }
+        }
+
+        $data = substr($data, 4+4+$tagsize);
+    }
+
+    return $cuedata;
+}
+
