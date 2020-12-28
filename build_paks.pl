@@ -13,6 +13,8 @@ use YAML::Tiny qw/Dump Load/;
 use File::Basename qw/dirname/;
 use Image::ExifTool qw/:Public/;
 
+use Data::Dumper qw/Dumper/;
+
 my %zip_urls = qw(
     quake_authmdl.zip       https://github.com/NightFright2k19/quake_authmdl/archive/master.zip
     LibreQuake.zip          https://github.com/MissLav/LibreQuake/archive/master.zip
@@ -23,7 +25,7 @@ my %zip_urls = qw(
 
 my %opts = ();
 
-getopts('rc', \%opts);
+getopts('rcp:z', \%opts);
 main(@ARGV);
 
 sub main {
@@ -32,7 +34,7 @@ sub main {
     my $files = {};
     for my $yamlfile (@yamlfiles) {
         my $yaml = YAML::Tiny->read($yamlfile)->[0];
-        %$files = (%$yaml, %$files);
+        %$files = (%$files, %$yaml);
     }
 
     my %zips = ();
@@ -88,18 +90,27 @@ sub main {
                             }
                         }
                     } else {
-                        $zips{$zip}->extractMember($file, "$pak/$path/$name");
+                        if ($file =~ /\/$/) {
+                            $zips{$zip}->extractTree($file, "$pak/$path/$name");
+                        } else {
+                            $zips{$zip}->extractMember($file, "$pak/$path/$name");
+                        }
                     }
                 }
             }
         }
     }
 
+    my $package = $opts{p} ? Archive::Zip->new() : undef;
+
     for my $pak (@paks) {
         resample_sound($pak) if $opts{r};
         create_pak("$pak.pak", $pak);
+        $package->addFile("$pak.pak", "$pak.pak") if $package;
         rmtree $pak if $opts{c};
     }
+
+    $package->writeToFileNamed($opts{p}) if $package;
 }
 
 sub extract_from_pak {
