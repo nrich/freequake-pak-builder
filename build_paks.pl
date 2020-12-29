@@ -105,8 +105,14 @@ sub main {
 
     for my $pak (@paks) {
         resample_sound($pak) if $opts{r};
-        create_pak("$pak.pak", $pak);
-        $package->addFile("$pak.pak", "$pak.pak") if $package;
+        my $pakfile = $opts{z} ? "$pak.pk3" : "$pak.pak";
+
+        if ($opts{z}) {
+            create_pk3($pakfile, $pak);
+        } else {
+            create_pak($pakfile, $pak);
+        }
+        $package->addFile($pakfile, $pakfile) if $package;
         rmtree $pak if $opts{c};
     }
 
@@ -159,6 +165,28 @@ sub extract_from_pak {
         print $fh substr($pak, $pakfiles->{$ex}->[0], $pakfiles->{$ex}->[1]);
         close $fh;
     }
+}
+
+sub create_pk3 {
+    my ($output, $path) = @_;
+
+    my $pk3 = Archive::Zip->new();
+
+    find({
+        no_chdir => 1,
+        wanted => sub {
+            my $file = $File::Find::name;
+
+            if (-f $file) {
+                my $pakfile = substr($File::Find::name, length($path)+1);
+
+                $pk3->addFile($file, $pakfile);
+            }
+        }},
+        $path
+    );
+
+    $pk3->writeToFileNamed($output);
 }
 
 sub create_pak {
